@@ -149,4 +149,14 @@ class FunSetSuite extends FunSuite {
       assert(exists(s, x => x < 2), "exist elem in s where elem < 2")
     }
   }
+
+
+  test("map test"){
+    new TestSets {
+      val s = map(s1, x => x + 1)
+      assert(contains(s, 2), " singleton s=2")
+    }
+  }
+
+
 }
